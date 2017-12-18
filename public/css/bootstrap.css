@@ -1217,7 +1217,10 @@ h6 .small,
   color: #777;
 }
 h1,
-.h1,
+.h1{
+  margin-top: 200px;
+  margin-bottom: 10px;
+  }
 h2,
 .h2,
 h3,
@@ -3116,7 +3119,6 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary {
   color: #fff;
   background-color: #337ab7;
-  border-color: #2e6da4;
 }
 .btn-primary:focus,
 .btn-primary.focus {
@@ -4589,7 +4591,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
 }
 .navbar-inverse {
-  background-color: #3498db;
+  background-color: #0cb5ce;
 }
 .navbar-inverse .navbar-brand {
   color: #ffffff;

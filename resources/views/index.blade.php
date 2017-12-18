@@ -30,8 +30,8 @@
     <div class="row">
     @foreach($courses as $course)
         <div class="col-sm-4 col-lg-4 col-md-4">
-            <div class="thumbnail" style="padding: 5px">
-                <img src="/image/c1.png" alt="" style="border-radius: 20px">
+            <div class="thumbnail" style="padding: 0px">
+                <img src="/image/c1.png" alt="" style="border-radius: 5px">
                 <div class="caption">
                     <!-- <h4 class="pull-right">${{ $course->price }}</h4> -->
                     <h4><a href="{{ route('courses.show', [$course->slug]) }}">{{ $course->title }}</a>
