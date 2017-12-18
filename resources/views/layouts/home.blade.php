@@ -54,6 +54,8 @@
                         </a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
+                    @if (Auth::check())
+                    @else
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li>
@@ -67,6 +69,7 @@
                             </li>
                         </ul>
                     </div>
+                    @endif
                     <!-- /.navbar-collapse -->
                 </div>
                 <div class="col-lg-5 text-right" style="padding: 10px">
