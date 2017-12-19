@@ -31,6 +31,7 @@ class CoursesController extends Controller
 
     private function createStripeCharge($request)
     {
+        // Stripe::setApiKey(env('STRIPE_API_KEY'));
         Stripe::setApiKey(env('STRIPE_API_KEY'));
 
         try {
@@ -42,7 +43,7 @@ class CoursesController extends Controller
             $charge = Charge::create([
                 'customer' => $customer->id,
                 'amount' => $request->get('amount'),
-                'currency' => "usd"
+                'currency' => "idr"
             ]);
         } catch (\Stripe\Error\Base $e) {
             return redirect()->back()->withError($e->getMessage())->send();

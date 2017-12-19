@@ -37,7 +37,7 @@
                     data-amount="{{ $course->price * 100 }}"
                     data-currency="usd"
                     data-name="Quick LMS"
-                    data-label="Buy course (${{ $course->price }})"
+                    data-label="Buy course (Rp{{ $course->price }})"
                     data-description="Course: {{ $course->title }}"
                     data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
                     data-locale="auto"

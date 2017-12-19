@@ -82,4 +82,11 @@ class LessonsController extends Controller
         return redirect()->route('lessons.show', [$lesson->course_id, $lesson_slug])->with('message', 'Test score: ' . $test_score);
     }
 
+    public function testUpload($lesson_slug)
+    {
+        $lesson = Lesson::where('slug', $lesson_slug)->where('course_id', $course_id)->firstOrFail();
+
+        return view('testUploadResult');
+    }
+
 }

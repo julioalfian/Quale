@@ -142,7 +142,7 @@
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
               <h1 class="mb-5">An easy online learning platform for high school student in fun way</h1>
-              <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">Start Now for Free!</a>
+              <a href="#features" class="btn btn-outline btn-xl js-scroll-trigger">Check Features!</a>
             </div>
           </div>
           <div class="col-lg-5 my-auto">

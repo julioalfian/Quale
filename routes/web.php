@@ -7,7 +7,7 @@ Route::post('course/{course_id}/rating', ['uses' => 'CoursesController@rating', 
 
 Route::get('lesson/{course_id}/{slug}', ['uses' => 'LessonsController@show', 'as' => 'lessons.show']);
 Route::post('lesson/{slug}/test', ['uses' => 'LessonsController@test', 'as' => 'lessons.test']);
-
+Route::post('/lesson/test-upload','TestUploadController@showUploadFile');
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('auth.login');
 $this->post('login', 'Auth\LoginController@login')->name('auth.login');

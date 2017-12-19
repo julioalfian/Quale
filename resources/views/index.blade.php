@@ -36,7 +36,7 @@
                     <!-- <h4 class="pull-right">${{ $course->price }}</h4> -->
                     <h4><a href="{{ route('courses.show', [$course->slug]) }}">{{ $course->title }}</a>
                     </h4>
-                    <h5 style="color: red">${{ $course->price }}</h5>
+                    <h5 style="color: red">Rp {{ $course->price }}</h5>
                     <p>{{ $course->description }}</p>
                 </div>
                 <div class="ratings" style="margin-top: 10px">
